@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" type="text/css" href="./dangnhap.css">
+    <script src="./dangnhap.js"></script>
+</head>
+<body>
+    <div id="khung_dangnhap">
+
+        <div class="dangnhap">Đăng nhập</div>
+        <div class=”form-group”>
+            <!-- <div>User Name:</div> -->
+            <input type=”text” name="" id="username" placeholder="Tài khoản" class=”form-control”>
+            <!-- <ion-icon class="icon" name="person-outline"></ion-icon> -->
+            <h4 class="thongbao" id="thongbao_dangnhap_taikhoai"></h4>
+        </div>
+        <div class=”form-group”>
+            <!-- <div>Password:</div> -->
+            <input type="password" name="" id="pass" placeholder="Mật khẩu" class=”form-control”>
+            <!-- <ion-icon class="icon2" name="lock-closed-outline"></ion-icon> -->
+            <h4 class="thongbao" id="thongbao_dangnhap_matkhau"></h4>
+        </div>
+        <label><input type="checkbox" />Quên mật khẩu?</label>
+        <button onclick="check_dangnhap()">Đăng nhập</button>
+        <div class="text">
+            Bạn chưa có tài khoản ?
+            <a href="./dangki.html" class="dangki">Đăng kí</a>
+        </div>
+
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" type="text/css" href="./dangnhap.css">
+    <script src="./dangki.js"></script>
+</head>
+<body>
+    <div>
+        <a id="back_dangnhap" href="./dangnhap.html"> < quay về đăng nhập</a>
+    </div>
+    <form id="khung_dangki">
+
+        <div class="dangnhap">Đăng kí</div>
+        <div class="text">*Họ và tên</div>
+        <div class=”form-group”>
+            <input type="”text”" name="fullname" placeholder="Họ và tên" id="fullname" onkeyup="check_fullname(this)" class=”form-control” >
+            <h4 class="thongbao" id="thongbao_fullname"></h4>
+        </div>
+        <div class="text">*Tài khoản</div>
+        <div class=”form-group”>
+            <!-- <div>User Name:</div> -->
+            <input type=”text” name="" placeholder="Tài khoản" id="username" onkeyup="check_username(this)" class=”form-control”>
+            <h4 class="thongbao" id="thongbao_username"></h4>
+            <!-- <ion-icon class="icon" name="person-outline"></ion-icon> -->
+        </div>
+        <div class="text">*Mật khẩu</div>
+        <div class=”form-group”>
+            <!-- <div>Password:</div> -->
+            <input type="password" name="" placeholder="Mật khẩu" id="pass1" onkeyup="check_pass1(this)" class=”form-control”>
+            <h4 class="thongbao" id="thongbao_pass1"></h4>
+            <!-- <ion-icon class="icon2" name="lock-closed-outline"></ion-icon> -->
+        </div>
+        <div class=”form-group”>
+            <input type="password" name="" placeholder="Xác nhận mật khẩu lại" id="pass2" onkeyup="check_pass2(this)" class=”form-control”>
+            <h4 class="thongbao" id="thongbao_pass2"></h4>
+        </div>
+        <div class="text">*Email (...@gmail.com)</div>
+        <div class=”form-group”>
+            <!-- <div>Password:</div> -->
+            <input type="”text”" name="" placeholder="Email" id="email" onkeyup="check_email(this)" class=”form-control”>
+            <h4 class="thongbao" id="thongbao_email"></h4>
+            <!-- <ion-icon class="icon2" name="lock-closed-outline"></ion-icon> -->
+        </div>
+        <div class="text">*Số điện thoại</div>
+        <div class=”form-group”>
+            <!-- <div>Password:</div> -->
+            <input type="number" name="" placeholder="Số điện thoại" id="sdt" onkeyup="check_sdt(this)" class=”form-control”>
+            <h4 class="thongbao" id="thongbao_sdt"></h4>
+            <!-- <ion-icon class="icon2" name="lock-closed-outline"></ion-icon> -->
+        </div>
+        <button onclick="check_dangki()">Đăng kí</button>
+
+    </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
